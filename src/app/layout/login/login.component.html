@@ -1,0 +1,43 @@
+<div id="container" class="align-center">
+  <div class="main-content">
+    <header class="align-vertical">
+      <img src="assets/images/42Q_logo.png" alt="" />
+      <div class="split"></div>
+      <h1>
+        <span>Multimedia</span>
+        <span>Platform</span>
+      </h1>
+    </header>
+
+    <form
+      class="login-form"
+      novalidate
+      [formGroup]="loginForm"
+      (ngSubmit)="onSubmit()"
+    >
+      <div
+        class="form-group"
+        *ngFor="let control of arrayItems; let idx = index"
+      >
+        <input
+          [type]="control.type"
+          [class]="control.name"
+          [formControlName]="control.name"
+          (focus)="removeError(control.name)"
+          (blur)="validate(control.name)"
+        />
+        <div *ngIf="control.value.touched && !control.value.valid" class="red">
+          {{ control.errorMsg }}
+        </div>
+      </div>
+
+      <div class="error" *ngIf="isWithoutVal">
+        Please input your username and password
+      </div>
+      <div class="error" *ngIf="isLoginFailed">{{ loginFailedMsg }}</div>
+      <div class="btn-container algin-between">
+        <button type="submit" class="sign-in-btn">Sign In</button>
+      </div>
+    </form>
+  </div>
+</div>

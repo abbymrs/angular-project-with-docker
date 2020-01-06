@@ -1,0 +1,127 @@
+{
+  "code": 0,
+  "success": true,
+  "totalNumber": 12,
+  "batchJobList": [
+    {
+      "id": "1",
+      "tenantName": "Sanm",
+      "tenantType": "Customer",
+      "scheduledTimes": "Thu Dec 05 2019 10:27:42 GMT+0",
+      "recurrence": "Year",
+      "status": 1,
+      "createTime": "2019-6-17 06:00",
+      "updateTime": "2019-6-17 12:00"
+    },
+    {
+      "id": "2",
+      "tenantName": "Sanm",
+      "tenantType": "Customer",
+      "scheduledTimes": "",
+      "recurrence": "Day",
+      "status": 0,
+      "createTime": "2019-6-17 06:00",
+      "updateTime": "2019-6-17 12:00"
+    },
+    {
+      "id": "3",
+      "tenantName": "Sanm",
+      "tenantType": "Customer",
+      "scheduledTimes": "",
+      "recurrence": "Month",
+      "status": 0,
+      "createTime": "2019-6-17 06:00",
+      "updateTime": "2019-6-17 12:00"
+    },
+    {
+      "id": "4",
+      "tenantName": "Sanm",
+      "tenantType": "Customer",
+      "scheduledTimes": "18:00",
+      "recurrence": "Day",
+      "status": 1,
+      "createTime": "2019-6-17 06:00",
+      "updateTime": "2019-6-17 12:00"
+    },
+    {
+      "id": "5",
+      "tenantName": "Sanm",
+      "tenantType": "Customer",
+      "scheduledTimes": "18:00",
+      "recurrence": "Day",
+      "status": 1,
+      "createTime": "2019-6-17 06:00",
+      "updateTime": "2019-6-17 12:00"
+    },
+    {
+      "id": "6",
+      "tenantName": "Sanm",
+      "tenantType": "Customer",
+      "scheduledTimes": "18:00",
+      "recurrence": "Day",
+      "status": 1,
+      "createTime": "2019-6-17 06:00",
+      "updateTime": "2019-6-17 12:00"
+    },
+    {
+      "id": "7",
+      "tenantName": "Sanm",
+      "tenantType": "Customer",
+      "scheduledTimes": "18:00",
+      "recurrence": "Day",
+      "status": 1,
+      "createTime": "2019-6-17 06:00",
+      "updateTime": "2019-6-17 12:00"
+    },
+    {
+      "id": "8",
+      "tenantName": "Sanm",
+      "tenantType": "Customer",
+      "scheduledTimes": "18:00",
+      "recurrence": "Day",
+      "status": 1,
+      "createTime": "2019-6-17 06:00",
+      "updateTime": "2019-6-17 12:00"
+    },
+    {
+      "id": "9",
+      "tenantName": "Sanm",
+      "tenantType": "Customer",
+      "scheduledTimes": "18:00",
+      "recurrence": "Day",
+      "status": 1,
+      "createTime": "2019-6-17 06:00",
+      "updateTime": "2019-6-17 12:00"
+    },
+    {
+      "id": "10",
+      "tenantName": "Sanm",
+      "tenantType": "Site",
+      "scheduledTimes": "18:00",
+      "recurrence": "Day",
+      "status": 1,
+      "createTime": "2019-6-17 06:00",
+      "updateTime": "2019-6-17 12:00"
+    },
+    {
+      "id": "11",
+      "tenantName": "Sanm",
+      "tenantType": "Site",
+      "scheduledTimes": "18:00",
+      "recurrence": "Day",
+      "status": 1,
+      "createTime": "2019-6-17 06:00",
+      "updateTime": "2019-6-17 12:00"
+    },
+    {
+      "id": "12",
+      "tenantName": "Sanm",
+      "tenantType": "Site",
+      "scheduledTimes": "18:00",
+      "recurrence": "Day",
+      "status": 1,
+      "createTime": "2019-6-17 06:00",
+      "updateTime": "2019-6-17 12:00"
+    }
+  ]
+}

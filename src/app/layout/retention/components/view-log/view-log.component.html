@@ -1,0 +1,20 @@
+<form novalidate #viewLogForm="ngForm" class="view-log-form">
+  <div class="input-group" *ngFor="let item of inputControls">
+    <app-input
+      [(ngModel)]="item.model"
+      [name]="item.controlName"
+      [control]="item"
+      [required]="item.isRequired"
+      [email]="item.type === 'email'"
+      ngFor="let item of inputControls"
+    ></app-input>
+  </div>
+  <div class="modal-actions">
+    <button
+      pButton
+      class="confirm default"
+      label="Close"
+      (click)="ref.close()"
+    ></button>
+  </div>
+</form>

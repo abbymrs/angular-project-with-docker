@@ -1,0 +1,22 @@
+<form
+  novalidate
+  class="search-container"
+  ngForm
+  #searchForm="ngForm"
+  (submit)="search()"
+>
+  <!-- <div class="input-group-container"> -->
+  <div class="input-group" *ngFor="let item of inputControls">
+    <app-input
+      [(ngModel)]="item.model"
+      [name]="item.controlName"
+      [control]="item"
+      [email]="item.type === 'email'"
+      [class]="item.containerClassName"
+    ></app-input>
+  </div>
+  <div class="search-btn">
+    <button type="submit"><span class="search-icon"></span></button>
+  </div>
+  <!-- </div> -->
+</form>

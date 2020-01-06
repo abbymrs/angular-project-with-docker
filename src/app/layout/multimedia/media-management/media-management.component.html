@@ -1,0 +1,56 @@
+<app-search-group
+  [inputControls]="searchInputControls"
+  (onSearch)="searcMedia($event)"
+></app-search-group>
+<div class="action-section log-action align-vertical">
+  <button
+    class="view-log-btn"
+    [ngClass]="{ 'active-btn': isViewing }"
+    pButton
+    type="button"
+    label="View"
+    (click)="viewMedia()"
+  ></button>
+</div>
+<p-table
+  *ngIf="totalNumber > 0"
+  [columns]="cols"
+  [value]="mediaList"
+  [(selection)]="selectedMedia"
+  selectionMode="single"
+  styleClass="media-table"
+>
+  <ng-template pTemplate="header" let-columns>
+    <tr>
+      <th
+        *ngFor="let col of columns"
+        [ngClass]="{
+          truncate: col.header === 'Description',
+          status: col.header === 'Status'
+        }"
+      >
+        {{ col.header }}
+      </th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-rowData let-columns="columns">
+    <tr [pSelectableRow]="rowData">
+      <td
+        *ngFor="let col of columns"
+        [ngClass]="{ status: col.header === 'Status' }"
+      >
+        <ng-container *ngIf="col.header === 'Status'; else normalItem">
+          {{ rowData[col.field] === 0 ? "Inactive" : "Active" }}
+        </ng-container>
+        <ng-template #normalItem>{{ rowData[col.field] || "--" }}</ng-template>
+      </td>
+    </tr>
+  </ng-template>
+</p-table>
+
+<p-confirmDialog
+  header="View Media"
+  icon="pi pi-exclamation-triangle"
+  acceptLabel="OK"
+  [rejectVisible]="isShowRejectLabel"
+></p-confirmDialog>

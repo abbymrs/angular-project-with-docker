@@ -1,0 +1,177 @@
+{
+  "success": true,
+  "message": "",
+  "data": [
+    {
+      "tenant_name": "E99",
+      "identifier": "ef59500d-f73a-4456-aa8d-45c4cef0ed4f",
+      "tag_name": "ES",
+      "file_name": "app.png",
+      "mime_type": "image/png",
+      "created_date": "2019-12-27 15:22:09.807588+08",
+      "status": 1
+    },
+    {
+      "tenant_name": "SANM-E81-01",
+      "identifier": "3f6f64a2-7620-4b3e-9396-e64b1803b979",
+      "tag_name": "CPI",
+      "file_name": "sample_image_03.png",
+      "mime_type": "image/png",
+      "created_date": "2019-12-27 13:17:55.770386+08",
+      "status": 1
+    },
+    {
+      "tenant_name": "SANM-E81",
+      "identifier": "7069aa33-6633-482d-92ab-39078d06782a",
+      "tag_name": "WI",
+      "file_name": "2019-12-27 10-07-46 的屏幕截图.png",
+      "mime_type": "image/png",
+      "created_date": "2019-12-27 10:07:12.162362+08",
+      "status": 1
+    },
+    {
+      "tenant_name": "SANM-E81",
+      "identifier": "5bfcfbfd-eea3-4a0b-87f7-88bbe925849d",
+      "tag_name": "WI",
+      "file_name": "2019-12-27 09-53-28 的屏幕截图.png",
+      "mime_type": "image/png",
+      "created_date": "2019-12-27 09:51:46.668252+08",
+      "status": 1
+    },
+    {
+      "tenant_name": "SANM-E81",
+      "identifier": "dff18ffe-3796-4dfc-ac23-e9465a01b36e",
+      "tag_name": "WI",
+      "file_name": "2019-12-27 09-44-59 的屏幕截图.png",
+      "mime_type": "image/png",
+      "created_date": "2019-12-27 09:43:15.661535+08",
+      "status": 1
+    },
+    {
+      "tenant_name": "SANM-E81",
+      "identifier": "217811a5-3da4-4e9e-ab91-d4b83d9e718a",
+      "tag_name": "WI",
+      "file_name": "2019-12-27 09-42-04 的屏幕截图.png",
+      "mime_type": "image/png",
+      "created_date": "2019-12-27 09:40:18.332334+08",
+      "status": 1
+    },
+    {
+      "tenant_name": "SANM-E81",
+      "identifier": "8c8ce2f9-108d-464b-bbf6-73fc74e7fcdb",
+      "tag_name": "WI",
+      "file_name": "2019-12-27 09-35-12 的屏幕截图.png",
+      "mime_type": "image/png",
+      "created_date": "2019-12-27 09:34:17.185315+08",
+      "status": 1
+    },
+    {
+      "tenant_name": "Sanm-E99-01",
+      "identifier": "2d0020c3-6d52-4af0-83d1-f94faa01a46f",
+      "tag_name": "CPI",
+      "file_name": "sample_image_01.png",
+      "mime_type": "image/png",
+      "created_date": "2019-12-26 10:04:05.556811+08",
+      "status": 1
+    },
+    {
+      "tenant_name": "Sanm-E99-01",
+      "identifier": "b89e36b0-1429-491a-84ea-252b98172f1d",
+      "tag_name": "CPI",
+      "file_name": "sample_image_02.png",
+      "mime_type": "image/png",
+      "created_date": "2019-12-26 10:03:53.955598+08",
+      "status": 1
+    },
+    {
+      "tenant_name": "SANM-E81-01",
+      "identifier": "cd954422-8957-460f-9d1c-2161918a0302",
+      "tag_name": "CPI",
+      "file_name": "sample_image_02.png",
+      "mime_type": "image/png",
+      "created_date": "2019-12-26 10:03:34.517183+08",
+      "status": 1
+    },
+    {
+      "tenant_name": "SANM-E81-01",
+      "identifier": "fc05b236-3bf3-4065-9f40-3417c6f5f6f3",
+      "tag_name": "CPI",
+      "file_name": "sample_image_01.png",
+      "mime_type": "image/png",
+      "created_date": "2019-12-26 10:03:21.315918+08",
+      "status": 1
+    },
+    {
+      "tenant_name": "E99",
+      "identifier": "0095e315-948f-4ad8-be9a-f46acd01312a",
+      "tag_name": "ES",
+      "file_name": "42q.png",
+      "mime_type": "image/png",
+      "created_date": "2019-12-25 14:36:26.594581+08",
+      "status": 1
+    },
+    {
+      "tenant_name": "Sanm-E99-01",
+      "identifier": "ad27c807-55a8-4419-bd61-4ae1a3b7f6e8",
+      "tag_name": "CPI",
+      "file_name": "sample_audio_03.m4a",
+      "mime_type": "audio/mp4",
+      "created_date": "2019-12-25 13:48:00.107277+08",
+      "status": 1
+    },
+    {
+      "tenant_name": "Sanm-E99-01",
+      "identifier": "1a0d69eb-5964-477c-941b-a20ae3adf70d",
+      "tag_name": "CPI",
+      "file_name": "sample_audio_01.mp3",
+      "mime_type": "audio/mpeg",
+      "created_date": "2019-12-25 13:47:26.124663+08",
+      "status": 1
+    },
+    {
+      "tenant_name": "SANM-E81-01",
+      "identifier": "31699cc1-9be8-443d-be64-408b1842beb6",
+      "tag_name": "CPI",
+      "file_name": "sample_audio_01.mp3",
+      "mime_type": "audio/mpeg",
+      "created_date": "2019-12-25 13:46:18.702375+08",
+      "status": 1
+    },
+    {
+      "tenant_name": "SANM-E81-01",
+      "identifier": "e39875a3-697b-4639-a9dd-a2933b3a4522",
+      "tag_name": "CPI",
+      "file_name": "sample_audio_03.m4a",
+      "mime_type": "audio/mp4",
+      "created_date": "2019-12-25 13:45:10.35322+08",
+      "status": 1
+    },
+    {
+      "tenant_name": "SANM-E81-01",
+      "identifier": "3b5cd91d-ff0c-40b7-b1b8-156a529c91d6",
+      "tag_name": "WI",
+      "file_name": "sample_pdf_01.pdf",
+      "mime_type": "application/pdf",
+      "created_date": "2019-12-25 12:30:13.705396+08",
+      "status": 1
+    },
+    {
+      "tenant_name": "SANM-E81-01",
+      "identifier": "ba819059-9a9c-4d5d-bc58-552ac777e8ff",
+      "tag_name": "WI",
+      "file_name": "sample_pdf_02.pdf",
+      "mime_type": "application/pdf",
+      "created_date": "2019-12-25 12:29:49.477182+08",
+      "status": 1
+    },
+    {
+      "tenant_name": "SANM-E81-01",
+      "identifier": "064a83c9-3651-4a1d-97d3-733775bf122f",
+      "tag_name": "WI",
+      "file_name": "Test测试.txt",
+      "mime_type": "text/plain",
+      "created_date": "2019-12-25 11:14:22.369939+08",
+      "status": 1
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+@import "../../../assets/scss/variable";
+.search-container {
+  min-height: 68px;
+  background: #ededed;
+  // display: flex;
+  // flex-wrap: wrap;
+
+  & > div {
+    // margin-right: 10px;
+    margin-top: 10px;
+  }
+  .search-btn {
+    width: 40px;
+    height: 40px;
+
+    button {
+      background: #f00;
+      outline: none;
+      border: none;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+
+      span {
+        color: #fff;
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+.operation-container {
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+  padding-left: 8px;
+
+  button {
+    margin-right: 4px;
+    background: #bcbcbc;
+    border: none;
+    color: #fff;
+    height: 28px;
+    padding: 0 8px;
+  }
+  .active-btn {
+    background: #fa5154;
+  }
+  span:first-child {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: #fa5154;
+    text-align: center;
+    margin-right: 4px;
+    line-height: 26px;
+    span {
+      color: #fff;
+    }
+  }
+}
+
+// // custom table
+// ::ng-deep {
+//   // table
+//   .ui-table table {
+//     border-collapse: separate;
+//     border-spacing: 0 6px;
+//   }
+//   // thead
+//   body .ui-table .ui-table-thead > tr > th {
+//     background: #fff;
+//     padding: 13px 8px;
+//     border: none;
+//     text-align: left;
+//   }
+//   // tbody
+//   body .ui-table .ui-table-tbody > tr > td {
+//     background: #fff;
+//     border: none;
+//     padding: 8px;
+//     color: #999;
+//   }
+//   body .ui-table .ui-table-tbody > tr:hover {
+//     box-shadow: 0 0 5px #ccc;
+//     transition: all linear 0.2s;
+//   }
+//   // highlight
+//   body .ui-table .ui-table-tbody > tr.ui-state-highlight {
+//     & > td {
+//       background: #ffd5d7;
+//     }
+//   }
+
+//   // paginator
+//   body .ui-paginator .ui-paginator-pages .ui-paginator-page.ui-state-active {
+//     background: $primary-red;
+//   }
+// }

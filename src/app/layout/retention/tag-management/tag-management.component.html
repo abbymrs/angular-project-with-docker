@@ -1,0 +1,78 @@
+<app-search-group
+  [inputControls]="searchInputControls"
+  (onSearch)="searchTag($event)"
+></app-search-group>
+<div class="action-section tag-action align-vertical">
+  <button
+    class="add-tag-btn"
+    [ngClass]="{ 'active-btn': isAdding }"
+    pButton
+    type="button"
+    label="Add"
+    (click)="addTag()"
+  ></button>
+  <button
+    class="delete-tag-btn"
+    [ngClass]="{ 'active-btn': isDeleting }"
+    pButton
+    type="button"
+    label="Delete"
+    (click)="deleteTag()"
+  ></button>
+  <button
+    class="edit-tag-btn"
+    [ngClass]="{ 'active-btn': isEditing }"
+    pButton
+    type="button"
+    label="Edit"
+    (click)="editTag()"
+  ></button>
+</div>
+
+<p-table
+  *ngIf="totalNumber > 0"
+  [columns]="cols"
+  [value]="tagList"
+  [(selection)]="selectedTag"
+  selectionMode="single"
+  styleClass="tag-table"
+>
+  <ng-template pTemplate="header" let-columns>
+    <tr>
+      <th
+        *ngFor="let col of columns"
+        [ngClass]="{ truncate: col.header === 'Description' }"
+      >
+        {{ col.header }}
+      </th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-rowData let-columns="columns">
+    <tr [pSelectableRow]="rowData">
+      <td *ngFor="let col of columns">
+        <ng-container *ngIf="col.header === 'Status'; else normalItem">
+          {{ rowData[col.field] === 0 ? "Inactive" : "Active" }}
+        </ng-container>
+        <ng-template #normalItem>{{ rowData[col.field] || "--" }}</ng-template>
+      </td>
+    </tr>
+  </ng-template>
+</p-table>
+<!-- empty user -->
+<div class="empty" *ngIf="totalNumber == 0">
+  No relative tag
+  <span class="red"
+    >{{ searchedTag.tagName }} {{ searchedTag.tagDescription }}</span
+  >
+  is found...
+</div>
+
+<!-- message -->
+<p-toast></p-toast>
+
+<p-confirmDialog
+  [header]="dialogTitle"
+  icon="pi pi-exclamation-triangle"
+  [acceptLabel]="acceptLabel"
+  [rejectVisible]="isShowRejectLabel"
+></p-confirmDialog>

@@ -1,0 +1,16 @@
+<div class="container">
+  <app-header></app-header>
+  <div class="content d-flex">
+    <app-sidebar-menu></app-sidebar-menu>
+    <div
+      id="route-container"
+      ngClass="route-container {{
+        state.isOpenMenu ? 'expanded-main-content' : 'collapsed-main-content'
+      }}"
+    >
+      <h3 class="page-title">{{ title }}</h3>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>

@@ -1,0 +1,263 @@
+/* You can add global styles to this file, and also import other style files */
+@import "assets/scss/variable";
+@import "assets/scss/forms";
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+* {
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+button {
+  border-radius: 0;
+}
+
+// hide number input arrows
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.d-flex {
+  display: flex;
+}
+.d-flex-col {
+  @extend .d-flex;
+  flex-direction: column;
+}
+
+.align-vertical {
+  @extend .d-flex;
+  align-items: center;
+}
+
+.align-horizontal {
+  @extend .d-flex;
+  justify-content: center;
+}
+
+.align-center {
+  @extend .align-horizontal;
+  align-items: center;
+}
+.algin-between {
+  @extend .align-vertical;
+  justify-content: space-between;
+}
+
+.red {
+  color: $error-color;
+}
+
+.d-inline {
+  display: inline-block;
+}
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none !important;
+}
+
+// button
+.add-user-btn {
+  .ui-button.ui-button-text-only {
+    border-radius: 0;
+    .ui-button-text {
+      padding: 0 1em;
+    }
+  }
+}
+
+// overwrite dialog
+.ui-dynamicdialog {
+  max-height: 95vh;
+  overflow-y: auto;
+}
+
+body .ui-corner-all {
+  border-radius: 0;
+}
+body .ui-dialog .ui-dialog-titlebar {
+  background-color: #a5a5a5;
+  color: #fff;
+  padding: 7px 10px;
+  border: 0;
+}
+
+.ui-dialog .ui-dialog-titlebar-icon span {
+  color: #fff;
+}
+
+body .ui-button:enabled:focus {
+  box-shadow: none;
+}
+
+body .ui-dialog .ui-dialog-content {
+  background-color: #f4f6fc;
+}
+
+.modal-actions {
+  padding: 16px 0 26px 0;
+  text-align: center;
+
+  button {
+    width: 90px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: none;
+
+    &.confirm {
+      margin-right: 20px;
+      border: none;
+      background: #565758;
+
+      &:hover {
+        background: #565758;
+        opacity: 0.9;
+        // border-color: #565758;
+      }
+    }
+    &.cancel {
+      background: $primary-red;
+      border: none;
+      &:hover {
+        background: $primary-red;
+        opacity: 0.9;
+        // border-color: #ff004e;
+      }
+    }
+    &.ui-button.ui-button-text-only .ui-button-text {
+      padding: 5px 0;
+    }
+  }
+}
+
+.margin-top5 {
+  margin-top: 5px;
+}
+.margin-top25 {
+  margin-top: 25px;
+}
+
+.empty {
+  padding: 20px 10px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+// search inputs
+.action-section {
+  background-color: #fff;
+  padding: 5px 10px;
+
+  .plus-btn {
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    background-color: #ff004e;
+    color: #fff;
+    text-align: center;
+  }
+  .ui-button:enabled {
+    margin-right: 4px;
+    background-color: #bcbcbc;
+    border-color: #bcbcbc;
+    color: #fff;
+    height: 28px;
+    border: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &.active-btn,
+    &:hover {
+      background-color: $primary-red;
+      border: none;
+      // border-color: #ff004e;
+    }
+    &.ui-button-text-only .ui-button-text {
+      padding: 0 1em;
+    }
+  }
+  &.tag-action {
+    .ui-button:enabled:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+// pagination
+body {
+  .ui-paginator {
+    border: 0;
+    border-top: 0 none;
+    text-align: right;
+    margin: 20px 0;
+    float: right;
+  }
+
+  .ui-paginator .ui-paginator-first,
+  .ui-paginator .ui-paginator-prev,
+  .ui-paginator .ui-paginator-next,
+  .ui-paginator .ui-paginator-last,
+  .ui-paginator .ui-paginator-pages .ui-paginator-page {
+    background-color: #fff;
+    margin-right: 5px;
+  }
+}
+
+// ellipsis
+.truncate {
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+body {
+  // dialog
+  .ui-dialog {
+    width: 450px;
+  }
+  .ui-datepicker {
+    &.condense-datepicker {
+      table td,
+      table th {
+        padding: 0;
+      }
+      .ui-timepicker {
+        font-size: 12px;
+      }
+    }
+  }
+}

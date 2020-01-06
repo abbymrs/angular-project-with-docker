@@ -1,0 +1,33 @@
+<!-- ngClass="{{
+  (isDisabled ? 'disabled-select-container ' : '') + 'select-container'
+}}" -->
+<div
+  class="select-container"
+  ngClass="{{
+    containerClass + (isDisabled ? ' disabled-select-container' : '')
+  }}"
+  (click)="onClickSelectContainer($event.target)"
+>
+  <span class="universal-label big-label normal-color"
+    ><i *ngIf="isRequired" style="color: #ef4d09">*</i>{{ labelName }}</span
+  >
+  <b class="select-icon"><i class="pi pi-caret-down"></i></b>
+  <div class="select-content repository-type"></div>
+  <input
+    type="text"
+    [(ngModel)]="model"
+    (ngModelChange)="updateChanges()"
+    style="display:none"
+    class="select"
+    [required]="isRequired"
+  />
+
+  <ul class="select-panel dis-hide" (click)="onClickSelectPanel($event)">
+    <ng-container *ngIf="optionsData">
+      <li *ngFor="let option of optionsData">
+        <a attr.data-real-value="{{ option.id }}">{{ option.value }}</a>
+      </li>
+    </ng-container>
+  </ul>
+  <div class="select-mask"></div>
+</div>

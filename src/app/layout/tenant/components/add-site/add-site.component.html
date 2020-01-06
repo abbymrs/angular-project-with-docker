@@ -1,0 +1,84 @@
+<form novalidate #addSiteForm="ngForm" class="add-site-form">
+  <!-- <div class="input-group">
+    <app-select
+      [labelName]="customerSelectControl.labelName"
+      [optionsData]="customerSelectControl.optionsData"
+      [isRequired]="customerSelectControl.isRequired"
+      [controlName]="customerSelectControl.controlName"
+      [(ngModel)]="customerSelectControl.model"
+      [name]="customerSelectControl.controlName"
+      (inputModelChange)="updateCustomerSelect($event)"
+    ></app-select>
+  </div>
+  <div class="input-group">
+    <app-select
+      [labelName]="plantSelectControl.labelName"
+      [optionsData]="plantSelectControl.optionsData"
+      [isRequired]="plantSelectControl.isRequired"
+      [controlName]="plantSelectControl.controlName"
+      [(ngModel)]="plantSelectControl.model"
+      [name]="plantSelectControl.controlName"
+      (inputModelChange)="updatePlantSelect($event)"
+    ></app-select>
+  </div>
+  <div class="input-group">
+    <app-input
+      [(ngModel)]="tenantNameControl.model"
+      [name]="tenantNameControl.controlName"
+      [control]="tenantNameControl"
+      [required]="tenantNameControl.isRequired"
+      [email]="tenantNameControl.type === 'email'"
+    ></app-input>
+  </div>
+  <div class="input-group">
+    <app-input
+      [(ngModel)]="mediaSizeControl.model"
+      [name]="mediaSizeControl.controlName"
+      [control]="mediaSizeControl"
+      [required]="mediaSizeControl.isRequired"
+      [email]="mediaSizeControl.type === 'email'"
+    ></app-input>
+  </div>
+  <div class="input-group">
+    <app-select
+      [labelName]="reTypeSelectControl.labelName"
+      [optionsData]="reTypeSelectControl.optionsData"
+      [isRequired]="reTypeSelectControl.isRequired"
+      [controlName]="reTypeSelectControl.controlName"
+      [(ngModel)]="reTypeSelectControl.model"
+      [name]="reTypeSelectControl.controlName"
+      (inputModelChange)="updateReTypeSelect($event)"
+    ></app-select>
+  </div>
+  <div class="input-group">
+    <app-input
+      [(ngModel)]="descriptionControl.model"
+      [name]="descriptionControl.controlName"
+      [control]="descriptionControl"
+      [required]="descriptionControl.isRequired"
+      [email]="descriptionControl.type === 'email'"
+    ></app-input>
+  </div> -->
+  <div class="input-group" *ngFor="let item of inputControls">
+    <app-input
+      [(ngModel)]="item.model"
+      [name]="item.controlName"
+      [control]="item"
+      [required]="item.isRequired"
+    ></app-input>
+  </div>
+  <div class="modal-actions">
+    <button
+      pButton
+      class="confirm default"
+      label="Save"
+      (click)="saveSite()"
+    ></button>
+    <button
+      pButton
+      class="cancel default"
+      label="Cancel"
+      (click)="ref.close()"
+    ></button>
+  </div>
+</form>

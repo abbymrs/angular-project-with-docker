@@ -1,0 +1,20 @@
+<header class="header-wrapper algin-between">
+  <div class="logo align-center">
+    <img src="assets/images/42Q_logo.png" alt="42Q_logo" />
+    <span class="separator"></span>
+    <div class="logo-text d-flex-col">
+      <span class="multimedia-text">Multimedia</span>
+      <span class="platform-text">Platform</span>
+    </div>
+  </div>
+  <div class="user-section align-center">
+    <div *ngIf="state.isLogin$ | async" class="align-center">
+      <span class="user-name">{{ state.username$ | async }}</span>
+      <a href="javascript:;" (click)="signOut()">logout</a>
+      <img src="assets/images/avatar.jpg" alt="user profile image" />
+    </div>
+    <div *ngIf="!(state.isLogin$ | async)" class="align-center">
+      <a href="javascript:;" (click)="signIn()">login</a>
+    </div>
+  </div>
+</header>

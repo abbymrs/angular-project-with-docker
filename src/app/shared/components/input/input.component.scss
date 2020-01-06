@@ -1,0 +1,23 @@
+p-calendar {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+}
+
+::ng-deep {
+  .ui-calendar {
+    width: 100%;
+  }
+  // input
+  .ui-widget-header .ui-inputtext,
+  .ui-widget-content .ui-inputtext {
+    width: 100%;
+    background: transparent;
+    padding-left: 12px;
+  }
+
+  body .ui-datepicker:not(.ui-datepicker-inline) {
+    top: 28px !important;
+    left: -1px !important;
+  }
+}

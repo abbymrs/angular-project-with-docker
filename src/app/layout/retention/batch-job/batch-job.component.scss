@@ -1,0 +1,38 @@
+.search-container {
+  min-height: 68px;
+  background: #ededed;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 8px;
+
+  input {
+    width: 360px;
+    height: 40px;
+    border: 1px solid #a5a5a5;
+    background: #fff;
+    padding: 0 0 0 12px;
+  }
+
+  button {
+    background: #fa5154;
+    outline: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 10px;
+
+    i {
+      font-size: 30px;
+      color: #fff;
+    }
+  }
+}
+
+.operation-container {
+  height: 38px;
+  background-color: #fff;
+  padding: 5px 10px;
+}

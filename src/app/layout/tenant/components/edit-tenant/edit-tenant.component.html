@@ -1,0 +1,25 @@
+<form novalidate #editTenantForm="ngForm" class="edit-tenant-form">
+  <div class="input-group" *ngFor="let item of inputControls">
+    <app-input
+      [(ngModel)]="item.model"
+      [name]="item.controlName"
+      [control]="item"
+      [required]="item.isRequired"
+    ></app-input>
+  </div>
+
+  <div class="modal-actions">
+    <button
+      pButton
+      class="confirm default"
+      label="Save"
+      (click)="saveTenant()"
+    ></button>
+    <button
+      pButton
+      class="cancel default"
+      label="Cancel"
+      (click)="ref.close()"
+    ></button>
+  </div>
+</form>

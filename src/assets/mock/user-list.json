@@ -1,0 +1,115 @@
+{
+  "code": 0,
+  "success": true,
+  "total_number": 12,
+  "data": [
+    {
+      "username": "Sanm",
+      "email": "james.zhao@42-q.com",
+      "password": "111",
+      "first_name": "",
+      "last_name": "",
+      "department": "32",
+      "remarks": "E100 pant tanant"
+    },
+    {
+      "username": "Abby",
+      "email": "james.zhao@42-q.com",
+      "password": "111",
+      "first_name": "James",
+      "last_name": "Zhao",
+      "department": "32",
+      "remarks": "E100 pant tanant"
+    },
+    {
+      "username": "Jane",
+      "email": "james.zhao@42-q.com",
+      "password": "111",
+      "first_name": "James",
+      "last_name": "Zhao",
+      "department": "32",
+      "remarks": "E100 pant tanant"
+    },
+    {
+      "username": "Lucy",
+      "email": "james.zhao@42-q.com",
+      "password": "111",
+      "first_name": "James",
+      "last_name": "Zhao",
+      "department": "32",
+      "remarks": "E100 pant tanant"
+    },
+    {
+      "username": "Coco",
+      "email": "james.zhao@42-q.com",
+      "password": "111",
+      "first_name": "James",
+      "last_name": "Zhao",
+      "department": "32",
+      "remarks": "E100 pant tanant"
+    },
+    {
+      "username": "Christine",
+      "email": "james.zhao@42-q.com",
+      "password": "111",
+      "first_name": "James",
+      "last_name": "Zhao",
+      "department": "32",
+      "remarks": "E100 pant tanant"
+    },
+    {
+      "username": "Benny",
+      "email": "james.zhao@42-q.com",
+      "password": "111",
+      "first_name": "James",
+      "last_name": "Zhao",
+      "department": "32",
+      "remarks": "E100 pant tanant"
+    },
+    {
+      "username": "Viki",
+      "email": "james.zhao@42-q.com",
+      "password": "111",
+      "first_name": "James",
+      "last_name": "Zhao",
+      "department": "32",
+      "remarks": "E100 pant tanant"
+    },
+    {
+      "username": "Vivian",
+      "email": "james.zhao@42-q.com",
+      "password": "111",
+      "first_name": "James",
+      "last_name": "Zhao",
+      "department": "32",
+      "remarks": "E100 pant tanant"
+    },
+    {
+      "username": "John",
+      "email": "james.zhao@42-q.com",
+      "password": "111",
+      "first_name": "James",
+      "last_name": "Zhao",
+      "department": "32",
+      "remarks": "E100 pant tanant"
+    },
+    {
+      "username": "Mike",
+      "email": "james.zhao@42-q.com",
+      "password": "111",
+      "first_name": "James",
+      "last_name": "Zhao",
+      "department": "32",
+      "remarks": "E100 pant tanant"
+    },
+    {
+      "username": "Lamco",
+      "email": "james.zhao@42-q.com",
+      "password": "111",
+      "first_name": "James",
+      "last_name": "Zhao",
+      "department": "32",
+      "remarks": "E100 pant tanant"
+    }
+  ]
+}

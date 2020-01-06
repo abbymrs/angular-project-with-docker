@@ -1,0 +1,87 @@
+{
+  "code": 0,
+  "totalNumber": 10,
+  "success": true,
+  "data": [
+    {
+      "tag_key": 1,
+      "tag_name": "WI",
+      "tag_description": "Work Instruction",
+      "live_retention": 12,
+      "cold_retention": 1,
+      "status": 0
+    },
+    {
+      "tag_key": 2,
+      "tag_name": "CPI",
+      "tag_description": "Work Instruction",
+      "live_retention": 12,
+      "cold_retention": 1,
+      "status": 1
+    },
+    {
+      "tag_key": 3,
+      "tag_name": "CPS",
+      "tag_description": "Work Instruction",
+      "live_retention": 12,
+      "cold_retention": 1,
+      "status": 0
+    },
+    {
+      "tag_key": 4,
+      "tag_name": "ED",
+      "tag_description": "Work Instruction",
+      "live_retention": 12,
+      "cold_retention": 1,
+      "status": 0
+    },
+    {
+      "tag_key": 5,
+      "tag_name": "ES",
+      "tag_description": "Work Instruction",
+      "live_retention": 12,
+      "cold_retention": 1,
+      "status": 1
+    },
+    {
+      "tag_key": 6,
+      "tag_name": "TS",
+      "tag_description": "Work Instruction",
+      "live_retention": 12,
+      "cold_retention": 1,
+      "status": 0
+    },
+    {
+      "tag_key": 7,
+      "tag_name": "WS",
+      "tag_description": "Work Instruction",
+      "live_retention": 12,
+      "cold_retention": 1,
+      "status": 1
+    },
+    {
+      "tag_key": 8,
+      "tag_name": "QA",
+      "tag_description": "Work Instruction",
+      "live_retention": 12,
+      "cold_retention": 1,
+      "status": 1
+    },
+    {
+      "tag_key": 9,
+      "tag_name": "TEST",
+      "tag_description": "Work Instruction",
+      "live_retention": 12,
+      "cold_retention": 1,
+      "status": 1
+    },
+    {
+      "tag_key": 10,
+      "tag_name": "PWT",
+      "tag_description": "Work Instruction",
+      "live_retention": 12,
+      "cold_retention": 1,
+      "status": 1
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "code": 200,
+  "message": "success",
+  "data": {
+    "tenant_list": [
+      {
+        "tenant_key": 1,
+        "tenant_name": "Samn",
+        "tenant_type": "Customer",
+        "customer": "Sanm",
+        "plant": "Sanm-E99",
+        "repository_type": "AMAZON_S3",
+        "media_size": null,
+        "description": "Sanm plant tanant",
+        "status": 0
+      },
+      {
+        "tenant_key": 2,
+        "tenant_name": "Sanm",
+        "tenant_type": "Customer",
+        "customer": "Sanm",
+        "plant": "Sanm-E99",
+        "repository_type": "s3",
+        "media_size": 17,
+        "description": "Sanm plant tanant",
+        "status": 0
+      },
+      {
+        "tenant_key": 3,
+        "tenant_name": "Sanm",
+        "tenant_type": "Customer",
+        "customer": "Sanm",
+        "plant": "Sanm-E99",
+        "repository_type": "s3",
+        "media_size": 17,
+        "description": "Sanm plant tanant",
+        "status": 0
+      },
+      {
+        "tenant_key": 4,
+        "tenant_name": "Sanm",
+        "tenant_type": "Customer",
+        "customer": "Sanm",
+        "plant": "Sanm-E99",
+        "repository_type": "s2",
+        "media_size": 17,
+        "description": "Sanm plant tanant",
+        "status": 0
+      },
+      {
+        "tenant_key": 5,
+        "tenant_name": "Sanm",
+        "tenant_type": "Customer",
+        "customer": "Sanm",
+        "plant": "Sanm-E99",
+        "repository_type": "s2",
+        "media_size": 17,
+        "description": "Sanm plant tanant",
+        "status": 0
+      },
+      {
+        "tenant_key": 6,
+        "tenant_name": "Sanm",
+        "tenant_type": "Customer",
+        "customer": "Sanm",
+        "plant": "Sanm-E99",
+        "repository_type": "s2",
+        "media_size": 17,
+        "description": "Sanm plant tanant",
+        "status": 0
+      },
+      {
+        "tenant_key": 7,
+        "tenant_name": "Sanm",
+        "tenant_type": "Customer",
+        "customer": "Sanm",
+        "plant": "Sanm-E99",
+        "repository_type": "s2",
+        "media_size": 17,
+        "description": "Sanm plant tanant",
+        "status": 0
+      },
+      {
+        "tenant_key": 8,
+        "tenant_name": "Sanm",
+        "tenant_type": "Customer",
+        "customer": "Sanm",
+        "plant": "Sanm-E99",
+        "repository_type": "s2",
+        "media_size": 17,
+        "description": "Sanm plant tanant",
+        "status": 0
+      },
+      {
+        "tenant_key": 9,
+        "tenant_name": "Sanm",
+        "tenant_type": "Customer",
+        "customer": "Sanm",
+        "plant": "Sanm-E99",
+        "repository_type": "s2",
+        "media_size": 17,
+        "description": "Sanm plant tanant",
+        "status": 0
+      },
+      {
+        "tenant_key": 10,
+        "tenant_name": "Sanm",
+        "tenant_type": "Customer",
+        "customer": "Sanm",
+        "plant": "Sanm-E99",
+        "repository_type": "s2",
+        "media_size": 17,
+        "description": "Sanm plant tanant",
+        "status": 0
+      },
+      {
+        "tenant_key": 11,
+        "tenant_name": "Sanm",
+        "tenant_type": "Customer",
+        "customer": "Sanm",
+        "plant": "Sanm-E99",
+        "repository_type": "s2",
+        "media_size": 17,
+        "description": "Sanm plant tanant",
+        "status": 0
+      }
+    ],
+    "total_number": 11
+  }
+}

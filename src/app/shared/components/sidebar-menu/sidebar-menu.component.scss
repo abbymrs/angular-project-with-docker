@@ -1,0 +1,139 @@
+.menu-height {
+  height: 40px;
+  line-height: 40px;
+}
+#side-menu {
+  transition: linear all 0.2s;
+  &.collapsed-side-menu {
+    width: 40px;
+  }
+  &.expanded-side-menu {
+    width: 170px;
+  }
+}
+#route-container {
+  &.expanded-main-content {
+    width: calc(100% - 50px);
+    margin-left: 50px;
+    transition: linear all 0.2s;
+  }
+
+  &.collapsed-main-content {
+    width: calc(100% - 180px);
+    margin-left: 180px;
+    transition: linear all 0.2s;
+  }
+}
+
+.side-menu {
+  width: 170px;
+  margin-right: 10px;
+  background-color: #a5a6a6;
+  height: calc(100vh - 50px - 36px);
+  margin-top: 50px;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+
+  .toggle-menu-btn {
+    background-color: #565758;
+    cursor: pointer;
+    @extend .menu-height;
+    i {
+      color: #fff;
+      font-size: 30px;
+    }
+  }
+
+  .menu-list {
+    list-style-type: none;
+
+    > li {
+      // @extend .menu-height;
+      width: 100%;
+      cursor: pointer;
+      background-color: #636363;
+      background-size: 20px 20px;
+      overflow: hidden;
+
+      .sub-menu-list {
+        display: none;
+        background-color: #434343;
+
+        li {
+          a {
+            padding: 10px 0 10px 30px;
+            display: block;
+            color: #fff;
+            font-size: 12px;
+
+            &.router-link-active,
+            &:hover {
+              background-color: #363636;
+              color: #f90041;
+            }
+          }
+        }
+      }
+      &.expanded-menu {
+        .sub-menu-list {
+          display: block;
+        }
+      }
+
+      > a {
+        display: block;
+        color: #fff;
+        font-weight: 700;
+        padding: 10px 0 10px 10px;
+
+        &:hover {
+          color: #fff !important;
+          transition: linear all 0.2s;
+        }
+        &:hover > span {
+          color: #fff !important;
+        }
+
+        &.router-link-active,
+        &.active-menu,
+        &:hover {
+          background-color: #fa5154;
+        }
+        & > i {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          margin-right: 5px;
+          vertical-align: middle;
+          pointer-events: none;
+
+          &.tenant-icon,
+          &.user-icon,
+          &.folder-icon,
+          &.control-icon {
+            width: 20px;
+            height: 20px;
+            background: url(/assets/icons/home.svg) no-repeat 0 0;
+            background-size: 20px 20px;
+            display: inline-block;
+          }
+
+          &.user-icon {
+            background-image: url(/assets/icons/user.svg);
+          }
+
+          &.control-icon {
+            background-image: url(/assets/icons/control.svg);
+          }
+          &.folder-icon {
+            background-image: url(/assets/icons/folder.svg);
+          }
+        }
+        & > span {
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}

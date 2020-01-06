@@ -1,0 +1,45 @@
+<nav
+  id="side-menu"
+  ngClass="side-menu {{ !state.isOpenMenu && 'collapsed-side-menu' }}"
+>
+  <div class="toggle-menu-btn align-center">
+    <i class="pi pi-bars" (click)="toggleMenu()"></i>
+  </div>
+  <ul class="menu-list">
+    <li
+      *ngFor="let item of items"
+      [ngClass]="{
+        'expanded-menu': item.isExpanded
+      }"
+      (click)="expandSubmenu(item)"
+    >
+      <a
+        href="javascript:;"
+        [routerLink]="item.routerLink"
+        routerLinkActive="router-link-active"
+        [ngClass]="{
+          'active-menu':
+            isRetention && item.routerLink.indexOf('retention') > -1
+        }"
+      >
+        <i [class]="item.icon"></i>
+        <span [ngClass]="state.isOpenMenu ? 'd-inline' : 'd-none'">{{
+          item.label
+        }}</span>
+      </a>
+      <ul
+        ngClass="sub-menu-list {{ state.isOpenMenu ? 'd-block' : 'd-none' }}"
+        *ngIf="item.items && item.items.length > 0"
+      >
+        <li *ngFor="let subItem of item.items">
+          <a
+            href="javascript:;"
+            [routerLink]="subItem.routerLink"
+            routerLinkActive="router-link-active"
+            >{{ subItem.label }}</a
+          >
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>

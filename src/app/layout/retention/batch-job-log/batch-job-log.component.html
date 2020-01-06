@@ -1,0 +1,57 @@
+<app-search-group
+  [inputControls]="searchInputControls"
+  (onSearch)="searchLog($event)"
+></app-search-group>
+<div class="action-section log-action align-vertical">
+  <button
+    class="view-log-btn"
+    [ngClass]="{ 'active-btn': isViewing }"
+    pButton
+    type="button"
+    label="View"
+    (click)="viewLog()"
+  ></button>
+</div>
+
+<p-table
+  *ngIf="totalNumber > 0"
+  [columns]="cols"
+  [value]="batchJobLogList"
+  [(selection)]="selectedLog"
+  selectionMode="single"
+  styleClass="tag-table"
+>
+  <ng-template pTemplate="header" let-columns>
+    <tr>
+      <th *ngFor="let col of columns">
+        {{ col.header }}
+      </th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-rowData let-columns="columns">
+    <tr [pSelectableRow]="rowData">
+      <td *ngFor="let col of columns">
+        {{ rowData[col.field] }}
+      </td>
+    </tr>
+  </ng-template>
+</p-table>
+<!-- empty user -->
+<div class="empty" *ngIf="totalNumber == 0">
+  No relative tag <span class="red">{{ searchedTag }}</span> is found...
+</div>
+
+<p-paginator
+  *ngIf="totalNumber > 1"
+  [rows]="pageSize"
+  [totalRecords]="totalNumber"
+  pageLinkSize="3"
+  (onPageChange)="paginate($event)"
+></p-paginator>
+
+<p-confirmDialog
+  [header]="dialogTitle"
+  icon="pi pi-exclamation-triangle"
+  [acceptLabel]="acceptLabel"
+  [rejectVisible]="isShowRejectLabel"
+></p-confirmDialog>
